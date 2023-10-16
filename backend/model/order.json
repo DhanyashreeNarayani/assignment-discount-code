@@ -1,0 +1,178 @@
+[
+    {
+        "user": {
+            "name": "Dhanya",
+            "discount": ""
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 2,
+                "price": 25
+            },
+            {
+                "productId": 2,
+                "productName": "Product2",
+                "amount": 1,
+                "price": 50
+            }
+        ],
+        "orderValue": 100
+    },
+    {
+        "user": {
+            "name": "Dhanya",
+            "discount": ""
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 1,
+                "price": 25
+            },
+            {
+                "productId": 2,
+                "productName": "Product2",
+                "amount": 1,
+                "price": 50
+            },
+            {
+                "productId": 3,
+                "productName": "Product3",
+                "amount": 1,
+                "price": 75
+            }
+        ],
+        "orderValue": 150
+    },
+    {
+        "user": {
+            "name": "Dhanya",
+            "discount": "TEST"
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 1,
+                "price": 25
+            },
+            {
+                "productId": 2,
+                "productName": "Product2",
+                "amount": 1,
+                "price": 50
+            },
+            {
+                "productId": 3,
+                "productName": "Product3",
+                "amount": 1,
+                "price": 75
+            }
+        ],
+        "discountAmount": 15,
+        "orderValue": 135
+    },
+    {
+        "user": {
+            "name": "test",
+            "discount": ""
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 1,
+                "price": 25
+            },
+            {
+                "productId": 2,
+                "productName": "Product2",
+                "amount": 2,
+                "price": 50
+            },
+            {
+                "productId": 3,
+                "productName": "Product3",
+                "amount": 1,
+                "price": 75
+            }
+        ],
+        "orderValue": 200
+    },
+    {
+        "user": {
+            "name": "Dhanya",
+            "discount": ""
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 1,
+                "price": 25
+            },
+            {
+                "productId": 2,
+                "productName": "Product2",
+                "amount": 1,
+                "price": 50
+            }
+        ],
+        "orderValue": 75
+    },
+    {
+        "user": {
+            "name": "Dhanya",
+            "discount": "TEST1"
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 4,
+                "price": 25
+            }
+        ],
+        "discountAmount": 10,
+        "orderValue": 90
+    },
+    {
+        "user": {
+            "name": "Dhanya",
+            "discount": "0"
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 10,
+                "price": 25
+            }
+        ],
+        "orderValue": 250
+    },
+    {
+        "user": {
+            "name": "Dhanya",
+            "discount": "0"
+        },
+        "orderedItems": [
+            {
+                "productId": 1,
+                "productName": "Product1",
+                "amount": 3,
+                "price": 25
+            },
+            {
+                "productId": 2,
+                "productName": "Product2",
+                "amount": 2,
+                "price": 50
+            }
+        ],
+        "orderValue": 175
+    }
+]

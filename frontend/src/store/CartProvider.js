@@ -3,7 +3,8 @@ import { useReduce, useReducer } from 'react';
 
 const defaultCartState = {
     items: [],
-    totalAmount: 0
+    totalAmount: 0,
+    discountAmount: 0,
 }
 
 const cartReducer = (state, action) => {
@@ -29,6 +30,7 @@ const cartReducer = (state, action) => {
         return {
             items: updatedItems,
             totalAmount: newTotalAmount,
+            discountAmount: state.discountAmount ? newTotalAmount * (10 / 100) : state.discountAmount
         }
     }
     if (action.type == "REMOVE") {
@@ -49,9 +51,24 @@ const cartReducer = (state, action) => {
 
         return {
             items: updatedItems,
-            totalAmount: updatedTotalAmount
+            totalAmount: updatedTotalAmount,
+            discountAmount: state.discountAmount ? updatedTotalAmount * (10 / 100) : state.discountAmount
         }
 
+    }
+
+    if (action.type == "CLEAR") {
+        return defaultCartState;
+    }
+
+    if (action.type == "APPLY_DISCOUNT") {
+
+        const discountedAmount = state.totalAmount * (10 / 100);
+        return {
+            items: state.items,
+            totalAmount: state.totalAmount,
+            discountAmount: discountedAmount
+        }
     }
     return defaultCartState
 }
@@ -70,11 +87,22 @@ const CartProvider = props => {
         dipatchCartAction({ type: 'REMOVE', productId: id })
     }
 
+    const clearCartHandler = () => {
+        dipatchCartAction({ type: 'CLEAR' })
+    }
+
+    const applyDiscountHandler = () => {
+        dipatchCartAction({ type: 'APPLY_DISCOUNT' })
+    }
+
     const cartContext = {
         items: cartState.items,
         totalAmount: cartState.totalAmount,
+        discountAmount: cartState.discountAmount,
         addItem: addItemToCartHandler,
-        removeItem: removeItemFromCartHandler
+        removeItem: removeItemFromCartHandler,
+        clearCart: clearCartHandler,
+        applyDiscount: applyDiscountHandler
     }
     return <CartContext.Provider value={cartContext}>
         {props.children}

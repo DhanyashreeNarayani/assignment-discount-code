@@ -1,6 +1,14 @@
 [
     {
         "discountCode": "TEST",
+        "used": true
+    },
+    {
+        "discountCode": "TEST1",
+        "used": true
+    },
+    {
+        "discountCode": "TEST2",
         "used": false
     }
 ]
