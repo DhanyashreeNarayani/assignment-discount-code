@@ -6,6 +6,10 @@
 2. To run the backend project type `cd backend && node app.js` on your terminal from the project root folder.
 3. To run the Frontend project type `cd frontend && npm install && npm start` on your terminal from the project root folder.
 
+#### Discount
+
+The discount is applied every 3rd order.
+
 #### Admin APIs
 
 1. http://localhost:4000/admin/generate-discount-code - Generate a discount code if the condition above is satisfied
