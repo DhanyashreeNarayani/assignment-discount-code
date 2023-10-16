@@ -3,7 +3,7 @@
 #### Installation
 
 1. Ensure you have both [NodeJS][node] and [npm][npm] (or [yarn][yarn]) installed.
-2. To run the backend project type `cd backend && node src/app.js` on your terminal from the project root folder.
+2. To run the backend project type `cd backend && node app.js` on your terminal from the project root folder.
 3. To run the Frontend project type `cd frontend && npm install && npm start` on your terminal from the project root folder.
 
 #### Admin APIs
